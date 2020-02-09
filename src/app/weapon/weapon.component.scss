@@ -1,0 +1,15 @@
+.rps-weapon {
+  &.rps-weapon__icon {
+    width: 100%;
+    background-size: cover;
+    &.rps-weapon__icon--rock {
+      background-image: url('../../assets/rock-icon-grey.png');
+    }
+    &.rps-weapon__icon--paper {
+      background-image: url('../../assets/paper-icon-grey.png');
+    }
+    &.rps-weapon__icon--scissors {
+      background-image: url('../../assets/scissors-icon-grey.png');
+    }
+  }
+}

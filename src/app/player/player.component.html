@@ -1,0 +1,20 @@
+<mat-card class="rps-player mat-elevation-z3">
+  <mat-card-header>
+    <div mat-card-avatar class="mat-card-avatar rps-player__avatar rps-player__avatar--{{player.type}}">
+      <mat-icon *ngIf="player.type == 'human'" color="primary">face</mat-icon>
+      <mat-icon *ngIf="player.type == 'computer'" color="primary">computer</mat-icon>
+    </div>
+    <mat-card-title class="rps-player__type">
+      {{player.type}}
+    </mat-card-title>
+    <mat-card-subtitle class="rps-player__name">
+      {{player.name}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="rps-player__weapons">
+      <app-weapon  class="rps-player__weapon" *ngFor="let weapon of weapons" [weapon]="weapon"></app-weapon>
+    </div>
+  </mat-card-content>
+</mat-card>
+

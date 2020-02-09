@@ -1,0 +1,14 @@
+<div class="rps-game">
+  <h2>RPS game</h2>
+  <div class="rps-game__field">
+    <app-player
+      class="rps-game__player rps-game__player--player"
+      [weapons]="weapons"
+      [player]="opponents.player"></app-player>
+    <div class="rps-game__result"></div>
+    <app-player
+      class="rps-game__player rps-game__player--computer"
+      [weapons]="weapons"
+      [player]="opponents.computer"></app-player>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.rps-game__field {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.rps-game__player {
+  flex-basis: 30%;
+}
+
+.rps-game__result {
+  flex-basis: 40%;
+}
